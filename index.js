@@ -53,7 +53,7 @@ let displayBooks=()=>{
 
 let nico=new Book("nico",20,"read");
 let knievel=new Book("nico",20,"read");
-let bill=new Book("nico",20,"read");
+let bill=new Book("nico",20,"not-read");
 addToLibrary(nico);
 addToLibrary(knievel);
 addToLibrary(bill);
