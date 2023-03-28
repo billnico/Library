@@ -82,7 +82,7 @@
     position: fixed;
     left: 50%;
     top: 100px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -90,7 +90,8 @@
     height: fit-content;
     width: fit-content;
     padding: 20px 10px;
-    background-color: #FDF5E6;
+    background-color: black;
+    color: white;
     border-radius: 10px;
 }
 

@@ -11,13 +11,14 @@
 <body>
     <div id="main">
          <div id="add-form-wrap">
-                <button class="add-button">Add New Book</button>
-                <form class="book-add-form">
+                <button class="add-button" id="button-add">Add New Book</button>
+                <form class="book-add-form" id="form">
                     <label for="title">Title</label>
-                    <input class="title" id="title" >
+                    <input class="title" id="title" name="title">
                     <label for="pages">Pages</label>
-                    <input id="pages" class="page">
-                    <input type="checkbox" id="ifRead" class="ifRead">
+                    <input id="pages" class="page" name="pages">
+                    <label for="ifRead">Read</label>
+                    <input type="checkbox" id="ifRead" class="ifRead" name="read">
                     <button type="submit" id="submit" class="add">Add Book</button>
                 </form>
          </div>
