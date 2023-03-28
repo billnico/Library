@@ -75,13 +75,11 @@ let formSubmit=(e)=>{
 
     displayBooks(library)
 }
-form.addEventListener("submit",formSubmit(e))
+form.addEventListener("submit",formSubmit(e));
 
-//initial books
 let nico=new Book("nico",20,true);
 let knievel=new Book("nico",20,true);
 let bill=new Book("nico",20,false);
-
 addToLibrary(nico);
 addToLibrary(knievel);
 addToLibrary(bill);
