@@ -58,8 +58,7 @@ let formButton=document.getElementById("submit");
 addBook.addEventListener("click",(e)=>{
     form.style.display="flex"
 });
-
-form.addEventListener("submit",(e)=>{
+let formSubmit=(e)=>{
     e.preventDefault();
     let data= new FormData(form);
     let title=data.get("title");
@@ -74,13 +73,17 @@ form.addEventListener("submit",(e)=>{
     form.style.display="none";
     bookGrid.innerHTML="";
 
-    displayBooks(library);
-})
+    displayBooks(library)
+}
+form.addEventListener("submit",formSubmit(e))
 
+//initial books
 let nico=new Book("nico",20,true);
 let knievel=new Book("nico",20,true);
 let bill=new Book("nico",20,false);
+
 addToLibrary(nico);
 addToLibrary(knievel);
 addToLibrary(bill);
+
 displayBooks(library);
