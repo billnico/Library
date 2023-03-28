@@ -58,7 +58,7 @@ let formButton=document.getElementById("submit");
 addBook.addEventListener("click",(e)=>{
     form.style.display="flex"
 });
-let formSubmit=(e)=>{
+form.addEventListener("submit",(e)=>{
     e.preventDefault();
     let data= new FormData(form);
     let title=data.get("title");
@@ -75,13 +75,17 @@ let formSubmit=(e)=>{
 
     displayBooks(library)
 }
-form.addEventListener("submit",formSubmit(e));
+);
 
 let nico=new Book("nico",20,true);
 let knievel=new Book("nico",20,true);
 let bill=new Book("nico",20,false);
+
 addToLibrary(nico);
 addToLibrary(knievel);
 addToLibrary(bill);
 
 displayBooks(library);
+
+
+//adding change of read status and deleting tommorow
